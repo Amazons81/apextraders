@@ -1,0 +1,66 @@
+name: trade_x_indicator
+description: "Trade X Indicator"
+
+# The following line prevents the package from being accidentally published to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  path_provider: ^2.1.2
+  permission_handler: ^11.3.1
+  gal: ^2.3.2 # Great for saving images to the gallery/photos
+  flutter:
+    sdk: flutter
+
+
+  # Add this line here:
+  http: ^1.1.0
+  google_fonts: ^6.0.0
+
+
+
+
+  # Standard icons for iOS-style UI
+  cupertino_icons: ^1.0.6
+
+  # For managing currency state and conversion across the app
+  provider: ^6.1.1
+  flutter_paystack_plus: ^2.0.0
+
+
+  # For the payment icons (Visa, Mastercard, Bitcoin, etc.) and WhatsApp icon
+  font_awesome_flutter: ^10.7.0
+
+  # For opening the WhatsApp links and external URLs
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package contains a set of recommended lints to
+  # encourage good coding practices.
+  flutter_lints: ^3.0.0
+  video_player: ^2.8.1
+  visibility_detector: ^0.4.0+2 # Add this line here
+
+flutter:
+  # This section is for using custom fonts and images
+  uses-material-design: true
+
+  # Asset configuration
+  assets:
+    - assets/images/
+    # Ensure your image 'one.png' is placed inside a folder named 'assets'
+    # in the root of your project.
+
+  # Optional: If you want to use a specific font like the one requested
+  # fonts:
+  #   - family: SpecialFont
+  #     fonts:
+  #       - asset: assets/fonts/YourFont-Italic.ttf
+  #         style: italic
