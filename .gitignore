@@ -43,3 +43,11 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Secret keys — never commit
+.env
+.env*
+lib/config/app_secrets.dart
+
+# Flutter build artifacts
+.last_build_id
